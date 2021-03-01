@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>飞机大战</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<link rel="stylesheet" href="./css/index.css">
+
+<link rel="shortcut icon" href="images/bitbug_favicon.ico" type="image/x-icon" />
+<style>
+    @media only screen and (max-width: 500px) {
+    #box{
+        width:100%;
+        height:100%;
+        margin:0;
+    }
+
+    #wrap{
+        width:100%;
+        height:100%;
+        
+    }
+    #box #wrap .title{
+         width:100%;
+        height:110px;
+    }
+    #wrap div{
+        width:100%;
+        height:100%;
+    }
+    #music{
+        transform:translateX(-100px);
+    }
+  }
+</style>
+</head>
+<body>
+	<div id="box" >
+		<div id="wrap">
+	    	<h3 class="title">飞机大战</h3>
+	    	<div id="mode_simple">简单模式</div>
+	    	<div id="mode_middle">中等模式</div>
+	    	<div id="mode_hard">困难模式</div>
+	    	<div id="mode_speed">查看排名</div>
+        </div>
+       
+        <div id="score">0</div>
+        
+        <img id="music" src="./images/music.png" style="display:none;" alt="">
+       
+        <audio src="./bgm/game_music.mp3"  autoplay="autoplay" hidden="true" loop="loop" controls></audio>
+        <audio src="./bgm/bullet.mp3" hidden="true"></audio>
+        <audio src="./bgm/game_over.mp3" hidden="true"></audio>
+        <img id="plane" src="./images/plane_1.png" alt="" width="100px" height="90px">
+        <div id="bullets">
+        </div>
+        <div id="enemys"></div>
+
+        
+
+    	
+    	<div id="final">
+    		<h1 class="over">GameOver</h4>
+    		<div class="recond">
+    			<p>最高纪录：<span id="history">99999</span></p>
+	    		<p>最后得分：<span id="total"></span></p>
+	    		<!-- <p>我的排名：<span id="honor"></span></p> -->
+    		</div>
+    		<p id="reset">重新开始</p>
+    		
+    	</div>
+    </div>
+    
+    <script src="./js/main.js"></script>
+    <script src="./js/game.js"></script>
+    <script src="./js/submit.js"></script>
+    <script src="./js/show.js"></script>
+</body>
+</html>

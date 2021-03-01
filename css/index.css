@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#box{
+    width:512px;
+    height:768px;
+    background:url("../images/bg_1.jpg");
+    margin:30px auto;
+	position: relative;
+	box-shadow: 0px 0px 10px #000;
+	overflow:hidden;
+	top:0;
+}
+#wrap{
+    width:512px;
+    height:680px;
+    background:url("../images/bg_1.jpg");
+    margin:30px auto;
+}
+#box #wrap .title{
+    position:relative;
+    top:40px;
+    width:100%;
+    height:110px;
+   
+	color: #fff;
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#wrap div{
+	width:260px;
+	height:40px;
+	margin:60px auto;
+	background:#44E1F5;
+	color:#000;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background 0.3s,color 0.3s;
+}
+#wrap div:hover{
+	background:#1FEA5D;
+	color: #fff;
+}
+#score{
+    display: none;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 100;
+	width:80px;
+	height:40px;
+	background:orange;
+	color: #fff;
+	font-size:20px;
+	font-weight: bold;
+	text-align:center;
+	line-height: 40px;
+}
+#music{
+    display: none;
+	position: absolute;
+	top:0;
+	right:0;
+	
+	/*transform:translateX(-100px);*/
+	z-index: 100;
+	width:50px;
+	height:50px;
+	
+	
+	font-size:20px;
+	font-weight: bold;
+	text-align:center;
+	line-height: 40px;
+}
+#plane{
+    position:absolute;
+    display:none;
+	width:122px;
+	height:95px;
+	
+
+}
+#final{
+	position:relative;
+    display:none;
+    margin:20px auto;
+    z-index:9999;
+
+
+}
+.over{
+	width:100%;
+	height:50px;
+	margin-top:80px;
+	text-align:center;
+	line-height:50px;
+	font-weight:bold;
+	font-size:40px;
+	color:red;
+}
+#final .recond{
+	width: 230px;
+    height: auto;
+    margin-left: 165px;
+    text-align: left;
+}
+#final .recond p{
+	margin-top: 70px;
+    text-align: left;
+    font-size: 24px;
+    color: #fff;
+}
+#final .recond #history{
+	color:yellow;
+	font-weight:bold;
+	font-style:italic;
+}
+
+#final .recond #total{
+	color:red;
+	font-weight:bold;
+	font-style:italic;
+}
+
+#final .recond #honor{
+	color:orange;
+	font-weight:bold;
+	font-style:italic;
+}
+
+#reset{
+	width:200px;
+	height:40px;
+	background:#fff;
+	margin:100px auto;
+	border-radius:30px;
+	text-align:center;
+	line-height:40px;
+	font-size:24px;
+	font-weight:bold;
+	cursor:pointer;
+	transition:color 0.3s,background 0.3s;
+}
+
+#reset:hover{
+	background:#5637F6;
+	color:#fff;
+}
+    
+
+.bullet{
+	position:absolute;
+}
+.enemy{
+	position:absolute;
+	
+}
+
+
+
+/*显示排名页面开始*/
+
+/*显示排名页面结束*/
